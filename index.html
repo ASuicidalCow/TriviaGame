@@ -4,65 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script rel="text/javascript" src="./assets/javascript/app.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	  <script src="./assets/javascript/app.js"></script>
+
+		<title>Final Fantasy Trivia</title>
 </head>
-<body>
-    <div class = "row">
-		<h1 class = "text-center">Final Fantasy Trivia</h1>
-	</div>
-	
-	<div class = "timer text-center">
-		<h3>Time Remaining: 95</h3>
-	</div>
-	<div>
-<div><h4>Who kills Aeris in the Forgotten City?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question1" value="correct">Sephiroth</label>
-<label class="radio-inline"><input type="radio" name="Question1" value="incorrect">Rufus</label>
-<label class="radio-inline"><input type="radio" name="Question1" value="incorrect">Cloud</label>
-<label class="radio-inline"><input type="radio" name="Question1" value="incorrect">Dr. Hojo</label>
-	</div>
-
-	<div>
-<div><h4>How many forms does Sephiroth have?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question2" value="incorrect">3</label>
-<label class="radio-inline"><input type="radio" name="Question2" value="correct">2</label>
-<label class="radio-inline"><input type="radio" name="Question2" value="incorrect">1</label>
-<label class="radio-inline"><input type="radio" name="Question2" value="incorrect">6</label>
-	</div>
-
-	<div>
-<div><h4>Which is NOT one of Cloud's limit breaks?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question3" value="incorrect">Meteorain</label>
-<label class="radio-inline"><input type="radio" name="Question3" value="incorrect">Finishing Touch</label>
-<label class="radio-inline"><input type="radio" name="Question3" value="incorrect">Climhazzard</label>
-<label class="radio-inline"><input type="radio" name="Question3" value="correct">Ultima-Slash</label>
-	</div>
-
-	<div>
-<div><h4>What is the most materia a character can equip?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question4" value="incorrect">6</label>
-<label class="radio-inline"><input type="radio" name="Question4" value="incorrect">9</label>
-<label class="radio-inline"><input type="radio" name="Question4" value="correct">16</label>
-<label class="radio-inline"><input type="radio" name="Question4" value="incorrect">24</label>
-	</div>
-
-	<div>
-<div><h4>Is Cid in every Final Fantasy game?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question5" value="incorrect">YES he is!</label>
-<label class="radio-inline"><input type="radio" name="Question5" value="correct">No! just the numbered games.</label>
-	</div>
-
-	<div>
-<div><h4>Can you beat Emerald Weapon Without the Underwater Materia?</h4></div>
-<label class="radio-inline"><input type="radio" name="Question6" value="incorrect">False</label>
-<label class="radio-inline"><input type="radio" name="Question6" value="correct">True</label>
-	</div>
-
-<button class="submit" onclick="return submitAnswers();" type="submit">Submit</button>
-</div>
-<button class = "btn btn-info quizStart">Start</button>
-
-</body>
-</html>
+		<body>
+			<div class="quizContainer container-fluid well well-lg">
+				<div id="quiz1" class="text-center">
+					<h4 style="color:rgb(3, 124, 180);position:absolute;left:70%;top:30%;" align="center" ><span id="iTimeShow">Time Remaining: </span><br/><span id='timer' style="font-size:25px;"></span></h4>
+					<h2>Final Fantasy Quiz</h2>
+				</div>
+				
+				<div class="question"></div>
+				<ul class="choiceList"></ul>
+				<div class="quizMessage"></div>
+				<div class="result"></div>
+				<button class="preButton">Previous Question</button>
+				<button class="nextButton">Next Question</button>
+			</div>
+		</body>
+		  </html>
